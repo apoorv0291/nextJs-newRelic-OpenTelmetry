@@ -1,0 +1,28 @@
+{
+    "name": "next-crash-course",
+    "private": true,
+    "scripts": {
+        "dev": "node -r ./tracing.js node_modules/next/dist/bin/next dev -p 3000",
+        "build": "next build && next export",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "12.0.8",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "serve": "^13.0.2",
+        "@grpc/grpc-js": "^1.5.3",
+        "@opentelemetry/api": "^1.0.4",
+        "@opentelemetry/auto-instrumentations-node": "^0.27.1",
+        "@opentelemetry/exporter-trace-otlp-grpc": "^0.27.0",
+        "@opentelemetry/resources": "^1.0.1",
+        "@opentelemetry/sdk-node": "^0.27.0",
+        "@opentelemetry/semantic-conventions": "^1.0.1",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "eslint": "8.7.0",
+        "eslint-config-next": "12.0.8"
+    }
+}
